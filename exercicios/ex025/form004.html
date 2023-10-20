@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            margin-top: 16px;
+        }
+        fieldset {
+            border: 3px solid black;
+        }
+        legend {
+            background-color: rgba(94, 255, 0, 0.411);
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formúlario E-mail e Telefone</h1>
+    <form action="cadastro.js" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">nome:</label>
+                <input type="text" name="nome" id="nome" required autocomplete="name" minlength="5" maxlength="30" placeholder="Nome completo">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required autocomplete="email" placeholder="E-mail">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" autocomplete="tel" required pattern="^\(\d{2,3}\)\d{4,5}-\d{4,5}$" placeholder="(xx)xxxx-xxxx">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Excluir">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
