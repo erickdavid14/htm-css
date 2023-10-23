@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form > div {
+            margin-top: 16px;
+        }
+        fieldset {
+            line-height: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formúlario Checkbox e Radio button em HTML</h1>
+
+    <form action="cadastro.js" autocomplete="on"> 
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sxmas" value="M" checked> <label for="sxmas"  >Masculino</label><br>
+            <input type="radio" name="sexo" id="sxfem" value="F" ><label for="sxfem" >Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            
+            <input type="checkbox" name="fut" id="fut" checked><label for="fut">Futebol</label> <br>
+
+            <input type="checkbox" name="basquete" id="basquete"><label for="basquete"  >Basquete</label> <br>
+
+            <input type="checkbox" name="natacao" id="natacao"><label for="natacao">Nataçao</label> <br>
+
+            <input type="checkbox" name="ciclismo" id="ciclismo"><label for="ciclismo">Ciclismo</label> <br>
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Excluir">
+        </div>
+    </form>
+</body>
+</html>
