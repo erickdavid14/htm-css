@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form > div {
+            margin-top: 16px;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Fomúlario</h1>
+<form action="cadastro.js" method="post">
+    
+        <div>
+            <label for="est">Estado:</label>
+            <select name="est" id="est">
+                <optgroup label="Regiçao Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PE" selected>Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </div>
+        
+        <div>
+            <label for="profissao">Profissão:</label>
+            <input type="text" name="profissao" id="profissao" list="lst">
+
+            <datalist id="lst">
+                <option value="Professor">Professor</option>
+                <option value="Mecanico">Mecanico</option>
+                <option value="Farmaceutico">Farmaceutico</option>
+            </datalist>
+
+        </div>
+
+        <div>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="msg" id="msg" cols="40" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Excluir">
+        </div>
+</form>
+</html>
