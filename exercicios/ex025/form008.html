@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form > div {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de Formúlario</h1>
+
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <div>
+            <label for="numero1">Numero 1:</label>
+            <input type="number" name="numero1" id="numero1" min="0" max="50" required oninput="soma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+            
+        </div>
+
+        <div>
+            <label for="numero2">Numero 2:</label>
+            <input type="number" name="numero2" id="numero2" min="0" max="50" required oninput="soma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+        </div>
+
+        <div>
+            <label for="soma">Soma:</label>
+            <output id="soma">0</output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Excluir">
+        </div>
+    </form>
+</body>
+</html>
