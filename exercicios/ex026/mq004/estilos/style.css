@@ -26,7 +26,7 @@ body {
 main {
     padding: 10px;
     background-color: #ffffff9c;
-    width:90vw ;
+    max-width: 400px ;
     margin:auto;
     margin-top: 20px;
     border-radius: 10px;
