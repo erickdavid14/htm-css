@@ -1,5 +1,6 @@
 @charset "UFT-8";
 
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +21,22 @@ header  h1 {
     text-align: center;
 }
 
+#burguer {
+    display: block;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu ul {
@@ -30,7 +44,7 @@ menu ul {
 }
 
 menu ul li a {
-    display: block;
+    display:block;
     padding: 10px;
     background-color: rgb(87, 87, 87);
     color: white;
